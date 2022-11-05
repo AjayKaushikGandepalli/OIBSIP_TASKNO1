@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(52, 52, 52)
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:95vh;
+}
+
+.nav{
+    width: 98vw;
+    background-color: rgb(168, 168, 168);
+}
+
+.box{
+    /* border: 3px solid red; */
+    width: 30vw;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.6);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.C{
+    grid-column: span 2;
+    margin: 3%;
+}
+
+.backspace{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+input{
+    grid-column: span 4;
+    padding: 0% 3% ;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(202, 202, 202);
+}
+
+.input1{
+    font-size: 1rem;
+    margin: 0% 1%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.input2{
+    text-align: right;
+    margin: 0% 1% 1%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+button{
+    margin: 5% 8%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.numpad{
+    background-color: rgb(182, 178, 178);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
